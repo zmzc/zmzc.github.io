@@ -5,13 +5,17 @@
   
   <title>分支 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="远程仓库gitgit 是一个分布式的 版本控制工具，特点，就是版本库存放在本地！！！ 远程仓库的作用就是共享版本库！！！ 共享代码！！！ 远程仓库的创建远程仓库其实就是一个裸仓库 裸仓库创建裸仓库1git init --bare 裸仓库创建完成之后，就不需要做任何操作了，在裸仓库中不能进行任何的开发操作 远程仓库的操作命令 给远程仓库推送内容 12345git push 远程仓库地址 本地分支名称">
+<meta name="keywords" content="javaSctipt,笔记云">
+<meta property="og:type" content="article">
 <meta property="og:title" content="分支">
 <meta property="og:url" content="http://yoursite.com/2017/10/08/分支/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:updated_time" content="2017-10-08T10:34:25.203Z">
+<meta property="og:description" content="远程仓库gitgit 是一个分布式的 版本控制工具，特点，就是版本库存放在本地！！！ 远程仓库的作用就是共享版本库！！！ 共享代码！！！ 远程仓库的创建远程仓库其实就是一个裸仓库 裸仓库创建裸仓库1git init --bare 裸仓库创建完成之后，就不需要做任何操作了，在裸仓库中不能进行任何的开发操作 远程仓库的操作命令 给远程仓库推送内容 12345git push 远程仓库地址 本地分支名称">
+<meta property="og:updated_time" content="2017-10-08T10:43:37.626Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="分支">
+<meta name="twitter:description" content="远程仓库gitgit 是一个分布式的 版本控制工具，特点，就是版本库存放在本地！！！ 远程仓库的作用就是共享版本库！！！ 共享代码！！！ 远程仓库的创建远程仓库其实就是一个裸仓库 裸仓库创建裸仓库1git init --bare 裸仓库创建完成之后，就不需要做任何操作了，在裸仓库中不能进行任何的开发操作 远程仓库的操作命令 给远程仓库推送内容 12345git push 远程仓库地址 本地分支名称">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -49,9 +53,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -66,6 +70,10 @@
   <time datetime="2017-10-08T10:34:25.000Z" itemprop="datePublished">2017-10-08</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hello/">-hello</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -82,22 +90,52 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h1><h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><p>git 是一个分布式的 版本控制工具，特点，就是版本库存放在本地！！！</p>
+<h2 id="远程仓库的作用"><a href="#远程仓库的作用" class="headerlink" title="远程仓库的作用"></a>远程仓库的作用</h2><p>就是共享版本库！！！ 共享代码！！！</p>
+<h2 id="远程仓库的创建"><a href="#远程仓库的创建" class="headerlink" title="远程仓库的创建"></a>远程仓库的创建</h2><p><strong><em>远程仓库其实就是一个裸仓库</em></strong></p>
+<h2 id="裸仓库"><a href="#裸仓库" class="headerlink" title="裸仓库"></a>裸仓库</h2><p>创建裸仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init --bare</div></pre></td></tr></table></figure></p>
+<p>裸仓库创建完成之后，就不需要做任何操作了，在裸仓库中不能进行任何的开发操作</p>
+<h2 id="远程仓库的操作命令"><a href="#远程仓库的操作命令" class="headerlink" title="远程仓库的操作命令"></a>远程仓库的操作命令</h2><ol>
+<li><p>给远程仓库推送内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git push 远程仓库地址 本地分支名称:远程分支名称</div><div class="line"></div><div class="line">如果本地分支名称和远程分支名称相同，那么可以缩写如下：</div><div class="line">git push xxx.xxx.git master:master</div><div class="line">git push xxx.xxx.git master</div></pre></td></tr></table></figure>
+</li>
+<li><p>获取远程仓库中所有的内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git clone 远程仓库地址 文件夹名称</div><div class="line"></div><div class="line">文件夹名称也可以不用写，默认使用的就是远程仓库的文件夹名称！！</div></pre></td></tr></table></figure>
+</li>
+<li><p>获取远程仓库中更新了的内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull 远程仓库地址 分支名称</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>只有在远程仓库中从未推送过任何内容的时候，我们才能随意向里面推送任何内容</p>
+<p>但是，一旦已经推送过一次内容了，那么之后就不能随便的向远程仓库推送内容了，能推送的，只能是和第一次推送相关的修改的内容！！</p>
+<p><strong>每次在向远程仓库中推送新内容的时候，必须先进行一次获取更新内容的操作（pull），否则可能推送失败！！！</strong></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/08/分支/" data-id="cj8im3psp0001lcudh0uuc5f9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/10/08/分支/" data-id="cj8imr8z20002okudwb0oyuus" class="article-share-link">Partager</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaSctipt/">javaSctipt</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记云/">笔记云</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
+    <a href="/2017/10/08/leoo/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          leoo
+        
+      </div>
+    </a>
+  
   
     <a href="/2017/10/08/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ancien</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -112,9 +150,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">Catégories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学习笔记/">-学习笔记</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hello/">-hello</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/学习笔记/">-学习笔记</a></li></ul>
     </div>
   </div>
 
@@ -122,9 +160,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">Mot-clés</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习/">学习</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaSctipt/">javaSctipt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习/">学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/笔记云/">笔记云</a></li></ul>
     </div>
   </div>
 
@@ -132,9 +170,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">Nuage de mot-clés</h3>
     <div class="widget tagcloud">
-      <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/学习/" style="font-size: 10px;">学习</a>
+      <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/javaSctipt/" style="font-size: 10px;">javaSctipt</a> <a href="/tags/学习/" style="font-size: 10px;">学习</a> <a href="/tags/笔记云/" style="font-size: 10px;">笔记云</a>
     </div>
   </div>
 
@@ -151,9 +189,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/10/08/leoo/">leoo</a>
+          </li>
         
           <li>
             <a href="/2017/10/08/分支/">分支</a>
@@ -180,7 +222,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
