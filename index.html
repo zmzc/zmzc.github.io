@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,103 +60,6 @@
 </header>
       <div class="outer">
         <section id="main">
-  
-    <article id="post-leoo" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/08/leoo/" class="article-date">
-  <time datetime="2017-10-08T10:53:04.000Z" itemprop="datePublished">2017-10-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/08/leoo/">leoo</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/08/leoo/" data-id="cj8imr8yo0000okud7csl87ak" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-分支" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/08/分支/" class="article-date">
-  <time datetime="2017-10-08T10:34:25.000Z" itemprop="datePublished">2017-10-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/hello/">-hello</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/08/分支/">分支</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h1><h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><p>git 是一个分布式的 版本控制工具，特点，就是版本库存放在本地！！！</p>
-<h2 id="远程仓库的作用"><a href="#远程仓库的作用" class="headerlink" title="远程仓库的作用"></a>远程仓库的作用</h2><p>就是共享版本库！！！ 共享代码！！！</p>
-<h2 id="远程仓库的创建"><a href="#远程仓库的创建" class="headerlink" title="远程仓库的创建"></a>远程仓库的创建</h2><p><strong><em>远程仓库其实就是一个裸仓库</em></strong></p>
-<h2 id="裸仓库"><a href="#裸仓库" class="headerlink" title="裸仓库"></a>裸仓库</h2><p>创建裸仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init --bare</div></pre></td></tr></table></figure></p>
-<p>裸仓库创建完成之后，就不需要做任何操作了，在裸仓库中不能进行任何的开发操作</p>
-<h2 id="远程仓库的操作命令"><a href="#远程仓库的操作命令" class="headerlink" title="远程仓库的操作命令"></a>远程仓库的操作命令</h2><ol>
-<li><p>给远程仓库推送内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git push 远程仓库地址 本地分支名称:远程分支名称</div><div class="line"></div><div class="line">如果本地分支名称和远程分支名称相同，那么可以缩写如下：</div><div class="line">git push xxx.xxx.git master:master</div><div class="line">git push xxx.xxx.git master</div></pre></td></tr></table></figure>
-</li>
-<li><p>获取远程仓库中所有的内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git clone 远程仓库地址 文件夹名称</div><div class="line"></div><div class="line">文件夹名称也可以不用写，默认使用的就是远程仓库的文件夹名称！！</div></pre></td></tr></table></figure>
-</li>
-<li><p>获取远程仓库中更新了的内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull 远程仓库地址 分支名称</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>只有在远程仓库中从未推送过任何内容的时候，我们才能随意向里面推送任何内容</p>
-<p>但是，一旦已经推送过一次内容了，那么之后就不能随便的向远程仓库推送内容了，能推送的，只能是和第一次推送相关的修改的内容！！</p>
-<p><strong>每次在向远程仓库中推送新内容的时候，必须先进行一次获取更新内容的操作（pull），否则可能推送失败！！！</strong></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/08/分支/" data-id="cj8imr8z20002okudwb0oyuus" class="article-share-link">Partager</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaSctipt/">javaSctipt</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记云/">笔记云</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
   
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -193,84 +96,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/08/hello-world/" data-id="cj8imr8yx0001okudqsjj6ube" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/10/08/hello-world/" data-id="cj8iodkqv0000bkud4uclqkdp" class="article-share-link">Share</a>
       
       
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-对象" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/10/08/对象/" class="article-date">
-  <time datetime="2015-10-08T09:34:55.000Z" itemprop="datePublished">2015-10-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/学习笔记/">-学习笔记</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/08/对象/">对象</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><p>多任务并行开发的时候，避免不了，各个任务之间相互影响，我们也可以采用备份文件夹的方式，来避免影响，但是这种方式不可取，因为一旦任务过多，文件夹数量也会随之增多不容易维护，最终的代码合并，也会出现问题</p>
-<h2 id="分支-1"><a href="#分支-1" class="headerlink" title="分支"></a>分支</h2><p>git中有个内容，叫做分支，分支的作用，其实和刚才我们做的备份一个文件夹的功能一致，就是对于当前的代码，做一个备份</p>
-<h2 id="分支的使用"><a href="#分支的使用" class="headerlink" title="分支的使用"></a>分支的使用</h2><ol>
-<li><p>创建分支</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch 分支名称</div></pre></td></tr></table></figure>
-</li>
-<li><p>切换分支</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout 分支名称</div></pre></td></tr></table></figure>
-</li>
-<li><p>合并分支</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git checkout master</div><div class="line">git merge 要合并的分支的名称</div></pre></td></tr></table></figure>
-</li>
-<li><p>删除分支</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -d 分支名称</div></pre></td></tr></table></figure>
-</li>
-<li><p>创建并切换分支</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b 分支名称</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="冲突问题"><a href="#冲突问题" class="headerlink" title="冲突问题"></a>冲突问题</h2><p>分支A中创建了文件xx.txt, 分支B中也创建了个xx.txt，那么git就会发现，有两个同名的文件，这时候，就是冲突产生了，冲突产生之后，合并会失败，需要先解决冲突，然后再次提交，才能正常的合并。</p>
-<h2 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h2><p>冲突产生之后，git会告知哪个文件冲突了，然后在文件中，会用 &gt;&gt;&gt;&gt; ==== &lt;&lt;&lt; 这样的方式将冲突的内容标记出来，我们只需要将标记删除，然后将代码改成自己想要的结果，再次add commit即可！！</p>
-<h2 id="分支的使用原则"><a href="#分支的使用原则" class="headerlink" title="分支的使用原则"></a>分支的使用原则</h2><p>只要有新的任务，就开辟一个新的分支去做，做完之后，将分支合并回去就可以了！！</p>
-<h2 id="master分支"><a href="#master分支" class="headerlink" title="master分支"></a>master分支</h2><p>这个分支，是git默认自动创建的！！</p>
-<p>创建的时机，并不是在<code>git init</code>之后就会有，而是，在第一次提交完成之后，才会默认的创建出来这个分支！！</p>
-<h2 id="分支切换要注意的事项"><a href="#分支切换要注意的事项" class="headerlink" title="分支切换要注意的事项"></a>分支切换要注意的事项</h2><p>必须先将所有的更改，做一次提交之后，再切换分支！！！<br>qq</p>
-<h2 id="回滚操作的恢复操作"><a href="#回滚操作的恢复操作" class="headerlink" title="回滚操作的恢复操作"></a>回滚操作的恢复操作</h2><ol>
-<li><p>查看所有的操作日志</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log -g</div></pre></td></tr></table></figure>
-</li>
-<li><p>创建新的分支，将要恢复到的版本号作为最后一个参数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch 分支名 版本号</div></pre></td></tr></table></figure>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/10/08/对象/" data-id="cj8imr8z40003okudpk4cp2bu" class="article-share-link">Partager</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习/">学习</a></li></ul>
-
     </footer>
   </div>
   
@@ -285,9 +113,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Catégories</h3>
+    <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hello/">-hello</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/学习笔记/">-学习笔记</a></li></ul>
+      <ul class="category-list"></ul>
     </div>
   </div>
 
@@ -295,9 +123,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Mot-clés</h3>
+    <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaSctipt/">javaSctipt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习/">学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/笔记云/">笔记云</a></li></ul>
+      <ul class="tag-list"></ul>
     </div>
   </div>
 
@@ -305,9 +133,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Nuage de mot-clés</h3>
+    <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/javaSctipt/" style="font-size: 10px;">javaSctipt</a> <a href="/tags/学习/" style="font-size: 10px;">学习</a> <a href="/tags/笔记云/" style="font-size: 10px;">笔记云</a>
+      
     </div>
   </div>
 
@@ -316,7 +144,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li></ul>
     </div>
   </div>
 
@@ -324,24 +152,12 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2017/10/08/leoo/">leoo</a>
-          </li>
-        
-          <li>
-            <a href="/2017/10/08/分支/">分支</a>
-          </li>
-        
-          <li>
             <a href="/2017/10/08/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2015/10/08/对象/">对象</a>
           </li>
         
       </ul>
@@ -357,7 +173,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
